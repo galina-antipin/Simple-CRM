@@ -6,11 +6,12 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UserComponent } from './user/user.component';
+import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, MatToolbarModule, MatSidenavModule, MatIconModule, DashboardComponent, UserComponent, RouterLink],
+  imports: [CommonModule, RouterOutlet, MatToolbarModule, MatSidenavModule, DashboardComponent, UserComponent, RouterLink, MatIconModule, MatButtonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
