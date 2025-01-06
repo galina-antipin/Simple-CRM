@@ -7,11 +7,12 @@ import {MatIconModule} from '@angular/material/icon';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UserComponent } from './user/user.component';
 import {MatButtonModule} from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, MatToolbarModule, MatSidenavModule, DashboardComponent, UserComponent, RouterLink, MatIconModule, MatButtonModule],
+  imports: [CommonModule, RouterOutlet, MatToolbarModule, MatSidenavModule, MatDialogModule, DashboardComponent, UserComponent, RouterLink, MatIconModule, MatButtonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
