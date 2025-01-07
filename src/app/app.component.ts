@@ -8,11 +8,28 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { UserComponent } from './user/user.component';
 import {MatButtonModule} from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { DialogAddUserComponent } from './dialog-add-user/dialog-add-user.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, MatToolbarModule, MatSidenavModule, MatDialogModule, DashboardComponent, UserComponent, RouterLink, MatIconModule, MatButtonModule],
+  imports: [
+    CommonModule,
+    RouterOutlet, 
+    MatToolbarModule, 
+    MatInputModule, 
+    MatSidenavModule, 
+    MatDialogModule, 
+    DashboardComponent, 
+    UserComponent, 
+    RouterLink, 
+    MatIconModule, 
+    MatButtonModule,
+    MatFormFieldModule,
+  DialogAddUserComponent],
+  
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
