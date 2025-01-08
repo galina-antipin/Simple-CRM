@@ -6,7 +6,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { User } from '../../models/user.class';
-import { NgModel } from '@angular/forms';
+import { FormsModule, NgModel } from '@angular/forms';
 
 @Component({
   selector: 'app-dialog-add-user',
@@ -18,6 +18,7 @@ import { NgModel } from '@angular/forms';
     MatButtonModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    FormsModule
   ],
   templateUrl: './dialog-add-user.component.html',
   styleUrl: './dialog-add-user.component.scss'
@@ -25,4 +26,7 @@ import { NgModel } from '@angular/forms';
 export class DialogAddUserComponent {
   user = new User();
 
+  saveUser(){
+    console.log('current user is', this.user)
+  }
 }
