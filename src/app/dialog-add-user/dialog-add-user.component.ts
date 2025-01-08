@@ -23,10 +23,13 @@ import { FormsModule, NgModel } from '@angular/forms';
   templateUrl: './dialog-add-user.component.html',
   styleUrl: './dialog-add-user.component.scss'
 })
+
 export class DialogAddUserComponent {
   user = new User();
+  birthDate!: Date;
 
   saveUser(){
+    this.user.birthDate = this.birthDate.getTime();
     console.log('current user is', this.user)
   }
 }
